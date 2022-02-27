@@ -1,0 +1,32 @@
+.label .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.button .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.list-view .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #c8c8c8;
+    -fx-cursor: hand;
+}
+
+.list-view:focused {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 1;
+}
+
+.scroll-pane {
+    -fx-fit-to-width: true;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+    -fx-background-color: transparent;
+}

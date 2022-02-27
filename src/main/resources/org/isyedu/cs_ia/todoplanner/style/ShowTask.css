@@ -1,0 +1,29 @@
+.label .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.button .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.date-picker .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.text-field .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.text-area .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}
+
+.check-box .text {
+    -fx-font-size: 13px;
+    -fx-font-family: "Helvetica", sans-serif;
+}

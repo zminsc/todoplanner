@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="375.0" prefWidth="500.0" stylesheets="@../style/NewItem.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isyedu.cs_ia.todoplanner.controller.NewItemController">
+   <children>
+      <VBox prefHeight="375.0" prefWidth="500.0">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="220.0" layoutY="10.0" prefWidth="60.0" text="Adding a" />
+                  <ChoiceBox fx:id="itemSelector" layoutX="175.0" layoutY="30.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblName" layoutX="30.0" layoutY="12.0" text="Name" />
+                  <TextField fx:id="nameField" layoutX="127.0" layoutY="7.0" prefHeight="26.0" prefWidth="350.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblDate" layoutX="30.0" layoutY="12.0" text="Date" />
+                  <DatePicker fx:id="dateField" layoutX="127.0" layoutY="7.0" prefWidth="350.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="115.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblDescription" layoutX="30.0" layoutY="12.0" text="Description" />
+                  <TextArea fx:id="descriptionField" layoutX="127.0" layoutY="7.0" prefHeight="100.0" prefWidth="350.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblStartTime" layoutX="30.0" layoutY="12.0" text="Start Time" />
+                  <ComboBox fx:id="startTimeHH" layoutX="127.0" layoutY="7.0" prefHeight="26.0" prefWidth="72.0" />
+                  <ComboBox fx:id="startTimeMM" layoutX="247.0" layoutY="7.0" prefHeight="26.0" prefWidth="72.0" />
+                  <Label fx:id="lblStartTimeHH" layoutX="210.0" layoutY="12.0" text="hh" />
+                  <Label fx:id="lblStartTimeMM" layoutX="330.0" layoutY="12.0" text="mm" />
+                  <Label fx:id="lblStartTimeAMPM" layoutX="434.0" layoutY="12.0" text="am/pm" />
+                  <ChoiceBox fx:id="startTimeAMPM" layoutX="367.0" layoutY="7.0" prefHeight="26.0" prefWidth="55.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblEndTime" layoutX="30.0" layoutY="12.0" text="End Time" />
+                  <ComboBox fx:id="endTimeHH" layoutX="127.0" layoutY="7.0" prefHeight="26.0" prefWidth="72.0" />
+                  <ComboBox fx:id="endTimeMM" layoutX="247.0" layoutY="7.0" prefHeight="26.0" prefWidth="72.0" />
+                  <Label fx:id="lblEndTimeHH" layoutX="210.0" layoutY="11.0" text="hh" />
+                  <Label fx:id="lblEndTimeMM" layoutX="330.0" layoutY="11.0" text="mm" />
+                  <Label fx:id="lblEndTimeAMPM" layoutX="434.0" layoutY="12.0" text="am/pm" />
+                  <ChoiceBox fx:id="endTimeAMPM" layoutX="367.0" layoutY="7.0" prefHeight="26.0" prefWidth="55.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnCancel" layoutX="342.0" layoutY="5.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" textFill="#197dff" />
+                  <Button fx:id="btnSave" layoutX="417.0" layoutY="5.0" mnemonicParsing="false" onAction="#save" prefWidth="60.0" text="Save" textFill="#00a80b" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

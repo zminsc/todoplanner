@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="375.0" prefWidth="500.0" stylesheets="@../style/Archive.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isyedu.cs_ia.todoplanner.controller.ArchiveController">
+   <children>
+      <VBox prefHeight="375.0" prefWidth="500.0">
+         <children>
+            <Pane fx:id="archivePane" prefHeight="60.0" prefWidth="500.0" stylesheets="@../style/Archive.css">
+               <children>
+                  <Label fx:id="lblArchive" layoutX="228.0" layoutY="22.0" stylesheets="@../style/Archive.css" text="Archive" />
+               </children>
+            </Pane>
+            <ListView fx:id="archive" prefHeight="315.0" prefWidth="600.0" />
+         </children></VBox>
+   </children>
+</AnchorPane>

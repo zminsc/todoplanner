@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/WeeklyView.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isyedu.cs_ia.todoplanner.controller.WeeklyViewController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="weekPane" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#prevWeek" prefWidth="50.0" text="Prev." />
+                  <Button layoutX="536.0" layoutY="18.0" mnemonicParsing="false" onAction="#nextWeek" prefWidth="50.0" text="Next" />
+                  <Label fx:id="lblWeek" layoutX="285.0" layoutY="22.0" text="Label" />
+               </children>
+            </Pane>
+            <HBox prefHeight="30.0" prefWidth="600.0">
+               <children>
+                  <Pane fx:id="timePane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblTime" layoutX="12.0" layoutY="6.5" text="Time" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="monPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblMon" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="tuePane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblTue" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="wedPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblWed" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="thuPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblThu" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="friPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblFri" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="satPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblSat" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="sunPane" prefHeight="30.0" prefWidth="52.5">
+                     <children>
+                        <Label fx:id="lblSun" layoutX="11.5" layoutY="6.5" text="Label" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="toDoPane" prefHeight="30.0" prefWidth="180.0">
+                     <children>
+                        <Label fx:id="lblToDo" layoutX="39.0" layoutY="7.0" text="Weekly To-Do List" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="250.0" prefWidth="600.0">
+               <children>
+                  <ScrollPane prefHeight="200.0" prefWidth="420.0">
+                     <content>
+                        <Canvas fx:id="canvas" height="1440.0" width="420.0" />
+                     </content>
+                  </ScrollPane>
+                  <ListView fx:id="toDoList" prefHeight="250.0" prefWidth="180.0" />
+               </children>
+            </HBox>
+            <Pane prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="517.0" layoutY="18.0" mnemonicParsing="false" onAction="#addNewItem" text="New Item" />
+                  <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#showMonthlyView" prefWidth="70.0" text="Monthly" />
+                  <Button layoutX="92.0" layoutY="18.0" mnemonicParsing="false" onAction="#showDailyView" prefWidth="70.0" text="Daily" />
+                  <Button layoutX="170.0" layoutY="18.0" mnemonicParsing="false" onAction="#showArchive" prefWidth="70.0" text="Archive" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

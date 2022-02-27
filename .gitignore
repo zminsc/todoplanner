@@ -1,0 +1,6 @@
+/out/
+/.idea/
+/target/
+/src/main/resources/META-INF/
+/ToDoPlanner.iml
+/.DS_Store
